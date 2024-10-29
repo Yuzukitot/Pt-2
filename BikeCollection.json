@@ -1,0 +1,64 @@
+{
+  "bike": [
+    {
+      "name": "Crosta 814",
+      "description": "sounds a rich and goods a carbon",
+      "price": "₱40,000",
+      "image": "crosta814.jpg"
+    },
+    {
+      "name": "Sunpeed Triton",
+      "description": "sounds a rich and carbon .",
+      "price": "₱200,000",
+      "image": "sunpeedtriton.jpg"
+    },
+    {
+      "name": "Mountain bike",
+      "description": "goods to rides",
+      "price": "₱30,000",
+      "image": "mountainbike.jpg"
+    },
+    {
+      "name": "Promax PR40",
+      "description": "sounds a rich and goods to rides and carbon",
+      "price": "₱50,000",
+      "image": "promaxpr40.jpg"
+    },
+    {
+      "name": "Gent 26er 894",
+      "description": "sounds a rich and goods to rides.",
+      "price": "₱45,000",
+      "image": "gent26er894.jpg"
+    },
+    {
+      "name": "Sava Carbon Road Bike",
+      "description": "this is carbon bike and goods to rides.",
+      "price": "₱60,000",
+      "image": "savacarbonroadbike.jpg"
+    },
+    {
+      "name": "New Asbike",
+      "description": "mountain bike and just 7speed.",
+      "price":"₱55,000",
+      "image": "newasbike.jpg"
+    },
+    {
+      "name": "Mountainpeak striker",
+      "description": "Sound a rich and just a carbon",
+      "price":"₱75,000",
+      "image": "mountainpeakstriker.jpg"
+    },
+        {
+          "name": "Fixie",
+          "description": "carbon parts and goods to speed.",
+          "price": "₱25,000",
+          "image": "fixie.jpg"
+        },
+            {
+              "name": "Japan Bike",
+              "description": "Goods to Tripp",
+               "price": "₱10,000",
+              "image": "japanbike.jpg"
+            }
+]
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empleo Online Tienda de Frutas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 20px 0;
+            font-size: 2em;
+            border-bottom: 1px dotted #000;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .bike-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+        }
+        .bike-card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .bike-card h3 {
+            margin: 10px 0;
+        }
+        .bike-card p {
+            color: #555;
+        }
+        .price {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border-top: 1px solid #ddd;
+        }
+        footer p {
+            margin: 5px 0;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Empleo Bike Collection</h1>
+    <div class="container" id="bike-container"></div>
+
+    <script>
+        // Fetch data from the JSON file
+        fetch('BikeCollection.json')
+            .then(response =>
+              response.json()) // Ensure to return the parsed JSON
+            .then(data => {
+                const container = document.getElementById('bike-container');
+                
+                // Render each fruit card
+                data.bike.forEach(bike => { // Access 'Fruits' array from data
+                    const card = document.createElement('div');
+                    card.className = 'bike-card';
+                    card.innerHTML = `
+                        <img src="${bike.image}" alt="${bike
+                        .name}">
+                        <h3>${bike.name}</h3>
+                        <p>${bike.description}</p>
+                        <p class="price">${bike.price}</p>
+                    `;
+                    container.appendChild(card);
+                });
+            })
+            .catch(error => {
+                console.error('Error fetching the data:', error);
+            });
+    </script>
+    <footer>
+      <p>Maria Sophia Empleo</p>
+      <p>12-cooper</p>
+    </footer>
+</body>
+</html>
